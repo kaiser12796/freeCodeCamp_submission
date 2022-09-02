@@ -51,7 +51,7 @@ CREATE TABLE public.appointments (
     appointment_id integer NOT NULL,
     customer_id integer NOT NULL,
     service_id integer NOT NULL,
-    "time" character varying(5) NOT NULL
+    "time" character varying(30) NOT NULL
 );
 
 
@@ -194,14 +194,14 @@ INSERT INTO public.services VALUES (3, 'dye');
 -- Name: appointments_appointment_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.appointments_appointment_id_seq', 7, true);
+SELECT pg_catalog.setval('public.appointments_appointment_id_seq', 15, true);
 
 
 --
 -- Name: customers_customer_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.customers_customer_id_seq', 98, true);
+SELECT pg_catalog.setval('public.customers_customer_id_seq', 124, true);
 
 
 --
